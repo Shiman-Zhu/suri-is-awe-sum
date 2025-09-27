@@ -1,10 +1,11 @@
+#!/home/shiman_zhu/workspace/suri-is-awe-sum/backend/.venv/bin/python
 import googlemaps
 from PIL import Image  # For saving images
 import requests
 import io
 
 # Initialize the client with your API key
-gmaps = googlemaps.Client(key='YOUR_GOOGLE_MAPS_API_KEouce')
+gmaps = googlemaps.Client(key='AIzaSyCaTtkbqPc4oYZTRXp2FxwlUnHQvC28CI4YOUR_GOOGLE_MAPS_API_KEouce')
 
 # Step 1: Get directions from A to B (e.g., New York to Boston)
 origin = '40.7128,-74.0060'  # Lat,Lon for A (NYC)

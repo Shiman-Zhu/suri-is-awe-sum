@@ -1,0 +1,54 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+.report/
+
+# Node.js
+# attention: The "node_modules" folder might be needed for deployment to Netlify or Vercel. Feel free to uncomment it below
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.user
+*.bak
+*.orig
+*.pyc
+*.swp
+.DS_Store
+.env
+.env.local
+.env.*.local
+.venv
+venv
+env
+
+# npm package manager
+.npm
+
+# macOS
+.DS_Store
+
+# build outputs
+build/
+coverage/
+
+# dependencies
+node_modules/
+
+# misc
+.eslintcache
+.prettierignore
+.prettierrc.json
+.vscode/
