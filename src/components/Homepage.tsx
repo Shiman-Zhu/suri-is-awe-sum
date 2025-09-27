@@ -34,7 +34,7 @@ export function Homepage({
             SigMap
           </h1>
           <p className="text-gray-600 text-lg px-4">
-            The most uselessly helpful map you'll ever use.
+            Directions, but make them funny.Your GPS, but unhinged.
           </p>
         </div>
 
