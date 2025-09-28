@@ -1,5 +1,9 @@
 from google import genai
 from google.genai import types
+from dotenv import load_dotenv
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+import uvicorn
 from PIL import Image
 import os
 
@@ -13,22 +17,26 @@ response = client.models.generate_content(
 )
 print(response.text)
 """
-
-client = genai.Client()
-
-response = client.models.generate_content(
-    model="gemini-2.5-flash",
-    contents="Explain how AI works in a few words",
-    config=types.GenerateContentConfig(
-        thinking_config=types.ThinkingConfig(thinking_budget=0) # Disables thinking
-    ),
+app = FastAPI()
+app.add_middleware(
+    allow_origin=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
-image = Image.open("Waterloo_sign_1000x700.jpg")   
+@app.get("/gemini")
+def get_genimi_response(prompt:str):
+    client = genai.Client()
 
-response = client.models.generate_content(
-    model="gemini-2.5-flash",
-    contents=[image, "Write a short google-map-like description for this location so users know how to navigate it."]
-)
+    image = Image.open("Waterloo_sign_1000x700.jpg")   
 
-print(response.text)
+    response = client.models.generate_content(
+        model="gemini-2.5-flash",
+        contents=[image, prompt],
+    )
+
+    return response
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0",port =5000)
