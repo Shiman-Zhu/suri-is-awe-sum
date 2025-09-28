@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 interface DirectionsPageProps {
   destination: string;
@@ -60,6 +60,15 @@ const funnyDirections = [
 
 export function DirectionsPage({ destination, onBackToHome }: DirectionsPageProps) {
   const [currentStep, setCurrentStep] = useState(0);
+  const [msgs, setMsgs] = useState([]);
+  useEffect(()=>{
+    const fetchData = async () =>{
+    const res = await fetch("http://locahost:5000/gemini");
+    const data = await res.json();
+    setMsgs(data.results);  
+    };
+    fetchData();
+  }, []);
   
   const handleNextStep = () => {
     if (currentStep < funnyDirections.length - 1) {
