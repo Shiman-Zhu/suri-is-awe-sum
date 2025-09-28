@@ -31,10 +31,10 @@ export function Homepage({
         {/* Title Section */}
         <div className="text-center mb-12">
           <h1 className="mb-4 text-8xl font-bold bg-gradient-to-r from-purple-600 via-pink-500 to-cyan-500 bg-clip-text text-transparent px-[0px] py-[20px] transform -rotate-1" style={{ fontFamily: '"Comic Sans MS", "Chalkduster", "Bradley Hand", cursive', textShadow: '2px 2px 4px rgba(0,0,0,0.1)' }}>
-            SigMap
+            SigMaps
           </h1>
           <p className="text-gray-600 text-lg px-4">
-            Directions, but make them funny.Your GPS, but unhinged.
+            Directions, but make them funny.
           </p>
         </div>
 
