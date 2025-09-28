@@ -34,12 +34,24 @@ const funnyDirections = [
   },
   {
     id: 5,
-    image: "🔄",
-    caption: "DO A 360°",
+    video: "/demoVid_5.mp4",
+    caption: "WALK",
     description: "Spin around because why not? You're probably dizzy anyway"
   },
   {
     id: 6,
+    video: "/demoVid_6.mp4",
+    caption: "TURN LEFT",
+    description: "Congratulations! You made it... somewhere. Was this your destination? ¯\\_(ツ)_/¯"
+  },
+  {
+    id: 7,
+    video: "/demoVid_7.mp4",
+    caption: "WALK STRAIGHT, AND...",
+    description: "Congratulations! You made it... somewhere. Was this your destination? ¯\\_(ツ)_/¯"
+  },
+  {
+    id: 8,
     image: "🎯",
     caption: "YOU'VE ARRIVED!",
     description: "Congratulations! You made it... somewhere. Was this your destination? ¯\\_(ツ)_/¯"
