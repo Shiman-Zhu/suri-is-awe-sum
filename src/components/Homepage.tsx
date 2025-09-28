@@ -30,10 +30,15 @@ export function Homepage({
       <div className="w-full max-w-md">
         {/* Title Section */}
         <div className="text-center mb-12">
-          <h1 className="mb-4 text-8xl font-bold bg-gradient-to-r from-purple-600 via-pink-500 to-cyan-500 bg-clip-text text-transparent px-[0px] py-[20px] transform -rotate-1" style={{ fontFamily: '"Comic Sans MS", "Chalkduster", "Bradley Hand", cursive', textShadow: '2px 2px 4px rgba(0,0,0,0.1)' }}>
-            SigMaps
+          <h1 className="mb-4 text-8xl font-bold bg-gradient-to-r from-purple-600 via-pink-500 to-cyan-500 bg-clip-text text-transparent px-[0px] py-[20px] transform -rotate-1" style={{ fontFamily: '"Times New Roman", "Chalkduster", "Bradley Hand", cursive', textShadow: '2px 2px 4px rgba(0,0,0,0.1)' }}>
+          <span>Sig</span>
+            <span className="mb-4 text-8xl font-bold bg-gradient-to-r from-purple-600 via-pink-500 bg-clip-text text-transparent px-[0px] py-[20px] relative mx-1" >
+              <span className="absolute -top-36 mb-4 font-bold bg-gradient-to-b from-purple-600 via-pink-500 bg-clip-text text-transparent px-[0px] py-[70px] left-1/3 transform -translate-x-1/2 -rotate-90 origin-center">ap</span>
+              <span>Σ</span>
+              </span>
           </h1>
-          <p className="text-gray-600 text-lg px-4">
+          <div/>
+          <p className="text-gray-600 text-lg px-4" style={{ fontFamily: '"Comic Sans", "Chalkduster", "Bradley Hand", cursive', textShadow: '2px 2px 4px rgba(0,0,0,0.1)' }}>
             Directions, but make them funny.
           </p>
         </div>

@@ -42,13 +42,13 @@ const funnyDirections = [
     id: 6,
     video: "/demoVid_6.mp4",
     caption: "TURN LEFT",
-    description: "Congratulations! You made it... somewhere. Was this your destination? ¯\\_(ツ)_/¯"
+    description: "Oh sure, just casually turn left like you own the street."
   },
   {
     id: 7,
     video: "/demoVid_7.mp4",
     caption: "WALK STRAIGHT, AND...",
-    description: "Congratulations! You made it... somewhere. Was this your destination? ¯\\_(ツ)_/¯"
+    description: "Congrats, you survived 200m without tripping. Now turn right."
   },
   {
     id: 8,
