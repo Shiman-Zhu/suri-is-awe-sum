@@ -1,7 +1,7 @@
 from google import genai
 from google.genai import types
 from PIL import Image
-import io
+import os
 
 
 # The client gets the API key from the environment variable `GEMINI_API_KEY`.
@@ -28,7 +28,7 @@ image = Image.open("Waterloo_sign_1000x700.jpg")
 
 response = client.models.generate_content(
     model="gemini-2.5-flash",
-    contents=[image, "Write a description for this location so users know how to navigate it."]
+    contents=[image, "Write a short google-map-like description for this location so users know how to navigate it."]
 )
 
 print(response.text)
