@@ -10,7 +10,7 @@ interface DirectionsPageProps {
 const funnyDirections = [
   {
     id: 1,
-    image: "🗺️",
+    video: "/demoVid.mp4",
     caption: "START HERE",
     description: "Look around. Are you lost already? Good, that's the spirit!"
   },
@@ -77,7 +77,19 @@ export function DirectionsPage({ destination, onBackToHome }: DirectionsPageProp
         <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/50">
           {/* Large emoji/icon */}
           <div className="text-center mb-6">
-            <div className="text-8xl mb-4">{currentDirection.image}</div>
+            {currentDirection.video ? (
+              <video
+                className="mx-auto rounded-2xl mb-4"
+                src={currentDirection.video}
+                width="400"
+                autoPlay
+                loop
+                muted
+                playsInline
+              />
+            ) : (
+    <div className="text-8xl mb-4">{currentDirection.image}</div>
+  )}
             
             {/* Meme-style caption */}
             <div className="relative inline-block">

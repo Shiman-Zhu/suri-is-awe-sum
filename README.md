@@ -1,2 +1,2 @@
-# suri-is-awe-sum
+# Sigmap
 hacknova repo
