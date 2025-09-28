@@ -10,36 +10,48 @@ interface DirectionsPageProps {
 const funnyDirections = [
   {
     id: 1,
-    video: "/demoVid.mp4",
+    video: "/demoVid_1.mp4",
     caption: "START HERE",
     description: "Look around. Are you lost already? Good, that's the spirit!"
   },
   {
     id: 2,
-    image: "➡️",
-    caption: "TURN RIGHT",
+    video: "/demoVid_2.mp4",
+    caption: "WALK FORWARD",
     description: "But not too right, we're not making political statements here"
   },
   {
     id: 3,
-    image: "🚶‍♂️",
-    caption: "WALK FORWARD",
+    video: "/demoVid_3.mp4",
+    caption: "WALK ON THE RIGHT PATH",
     description: "Put one foot in front of the other. Revolutionary, I know."
   },
   {
     id: 4,
-    image: "🤔",
-    caption: "STOP AND THINK",
+    video: "/demoVid_4.mp4",
+    caption: "TURN LEFT",
     description: "Question all your life choices that led you here"
   },
   {
     id: 5,
-    image: "🔄",
-    caption: "DO A 360°",
+    video: "/demoVid_5.mp4",
+    caption: "WALK",
     description: "Spin around because why not? You're probably dizzy anyway"
   },
   {
     id: 6,
+    video: "/demoVid_6.mp4",
+    caption: "TURN LEFT",
+    description: "Congratulations! You made it... somewhere. Was this your destination? ¯\\_(ツ)_/¯"
+  },
+  {
+    id: 7,
+    video: "/demoVid_7.mp4",
+    caption: "WALK STRAIGHT, AND...",
+    description: "Congratulations! You made it... somewhere. Was this your destination? ¯\\_(ツ)_/¯"
+  },
+  {
+    id: 8,
     image: "🎯",
     caption: "YOU'VE ARRIVED!",
     description: "Congratulations! You made it... somewhere. Was this your destination? ¯\\_(ツ)_/¯"
